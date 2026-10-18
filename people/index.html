@@ -25,7 +25,7 @@
 .group-photo figcaption {
   text-align: center;
   font-size: 0.9rem;
-  color: #6c757d;
+  color: var(--global-text-color-light);
   margin-top: 0.4rem;
 }
 
@@ -63,19 +63,14 @@
 .mentor-photo a.member-link { text-decoration: none; display: flex; flex-direction: column; align-items: flex-start; gap: 0.8rem; }
 .mentor-photo a.member-link img { width: 180px; height: 180px; object-fit: cover; border-radius: 0.5rem; }
 .mentor-photo a.member-link .member-name:hover { text-decoration: underline; text-underline-offset: 2px; }
-.mentor-photo .member-title { font-size: 0.95rem;  color: #495057; }
-.mentor-photo .member-bio   { font-size: 0.85rem;  color: #6c757d; }
+.mentor-photo .member-title { font-size: 0.95rem;  color: var(--global-text-color-light); }
+.mentor-photo .member-bio   { font-size: 0.85rem;  color: var(--global-text-color-light); }
 .mentor-intro {
   font-size: 0.95rem;
   line-height: 1.7;
-  color: #495057;
+  color: var(--global-text-color-light);
   white-space: pre-line;
   margin-top: -1rem;
-}
-@media (prefers-color-scheme: dark) {
-  .mentor-photo .member-title,
-  .mentor-photo .member-bio { color: #adb5bd; }
-  .mentor-intro             { color: #ced4da; }
 }
 
 /* ── 第三部分：学生小网格（4 列） ─────────────── */
@@ -99,7 +94,7 @@
   display: block;
 }
 .student-card .student-name { font-weight: 600; font-size: 1rem; }
-.student-card .student-role { font-size: 0.85rem; color: #495057; margin-top: 0.15rem; }
+.student-card .student-role { font-size: 0.85rem; color: var(--global-text-color-light); margin-top: 0.15rem; }
 /* Card with a link: whole card is clickable */
 .student-card a.student-card-link {
   text-decoration: none;
@@ -109,9 +104,6 @@
 .student-card a.student-card-link .student-name:hover {
   text-decoration: underline;
   text-underline-offset: 2px;
-}
-@media (prefers-color-scheme: dark) {
-  .student-card .student-role { color: #adb5bd; }
 }
 </style> <figure class="group-photo"> <img src="/assets/img/8.jpg" alt="IVC Lab 全体成员合影" loading="lazy"> <figcaption>IVC Lab 全体成员合影</figcaption> </figure> <div data-lang="en"><h2 class="people-section-title">Lab Director</h2></div> <div data-lang="zh"><h2 class="people-section-title">导师 / 课题组长</h2></div> <div class="mentor-section"> <div class="mentor-photo"> <a class="member-link" href="http://zs.yjs.cqut.edu.cn/info/1081/3188.htm" target="_blank" rel="noopener"> <img src="/assets/img/teacher.jpg" alt="Xin Feng" loading="lazy"> <div data-lang="en"> <div class="member-name">Xin Feng</div> <div class="member-title">Ph.D. · MSc Supervisor</div> <div class="member-bio">Research: Computer Vision, Image &amp; Video Processing</div> </div> <div data-lang="zh"> <div class="member-name">冯欣</div> <div class="member-title">博士 · 硕士生导师</div> <div class="member-bio">研究方向：计算机视觉、图像及视频处理</div> </div> </a> </div> <div class="mentor-intro"> <div data-lang="en">I am a Ph.D. holder and MSc supervisor, recognized as a key academic talent in Chongqing. Before that, I completed my postdoctoral research at the NYU Tandon School of Engineering. My work centers on intelligent visual perception for unmanned systems, adversarial attacks on neural networks, and medical image processing. Over the years, I have published more than 40 papers in top venues such as TPAMI, CVPR, NeurIPS, and ICCV, and hold 14 patents. I have led 16+ provincial and ministerial-level projects, including NSFC grants, with total funding exceeding 3 million RMB. Several of my results have been put into production at Changan Auto and Shanghai Huayu Vision, generating economic benefits of over 10 million RMB. I was also awarded the "Young Elite" and "Lingjun Talent" titles by Chongqing University of Technology. </div> <div data-lang="zh">冯欣，博士，硕士生导师，重庆市学术技术带头人后备人选；美国纽约大学工程学院电子工程系博士后。 致力于无人系统智能视觉感知、神经网络模型对抗攻击、医学图像处理及辅助诊疗等研究。 在 TPAMI、CVPR、NeurIPS、ICCV 等顶级期刊/会议上发表论文 40 余篇，授权专利 14 件； 主持国家自然科学基金青年基金、重庆市自然科学基金等多项省部级项目 16 项，承担经费 300 余万元。 相关成果已在长安汽车、上海华域视觉科技等企业完成产业化应用，产生经济效益 1000 万元以上。 获重庆理工大学首批"青年英才"及"士继英才·领军人才"称号。 </div> </div> </div> <div data-lang="en"><h2 class="people-section-title">Master Students</h2></div> <div data-lang="zh"><h2 class="people-section-title">硕士研究生</h2></div> <div class="students-grid"> <div class="student-card"> <a class="student-card-link" href="https://cs.cqut.edu.cn/" target="_blank" rel="noopener"> <img src="/assets/img/2.jpg" alt="Xiaoming Wang" loading="lazy"> <div data-lang="en"> <div class="student-name">Xiaoming Wang</div> <div class="student-role">PhD Student · 2023</div> </div> <div data-lang="zh"> <div class="student-name">王小明</div> <div class="student-role">博士生 · 2023</div> </div> </a> </div> <div class="student-card"> <a class="student-card-link" href="https://cs.cqut.edu.cn/" target="_blank" rel="noopener"> <img src="/assets/img/3.jpg" alt="Xiaohong Li" loading="lazy"> <div data-lang="en"> <div class="student-name">Xiaohong Li</div> <div class="student-role">MSc Student · 2024</div> </div> <div data-lang="zh"> <div class="student-name">李小红</div> <div class="student-role">硕士生 · 2024</div> </div> </a> </div> <div class="student-card"> <a class="student-card-link" href="https://cs.cqut.edu.cn/" target="_blank" rel="noopener"> <img src="/assets/img/4.jpg" alt="Wei Zhang" loading="lazy"> <div data-lang="en"> <div class="student-name">Wei Zhang</div> <div class="student-role">Postdoc · 2024</div> </div> <div data-lang="zh"> <div class="student-name">张伟</div> <div class="student-role">博士后 · 2024</div> </div> </a> </div> <div class="student-card"> <a class="student-card-link" href="https://cs.cqut.edu.cn/" target="_blank" rel="noopener"> <img src="/assets/img/5.jpg" alt="Fang Liu" loading="lazy"> <div data-lang="en"> <div class="student-name">Fang Liu</div> <div class="student-role">PhD Student · 2024</div> </div> <div data-lang="zh"> <div class="student-name">刘芳</div> <div class="student-role">博士生 · 2024</div> </div> </a> </div> <div class="student-card"> <a class="student-card-link" href="https://cs.cqut.edu.cn/" target="_blank" rel="noopener"> <img src="/assets/img/6.jpg" alt="Qiang Chen" loading="lazy"> <div data-lang="en"> <div class="student-name">Qiang Chen</div> <div class="student-role">MSc Student · 2025</div> </div> <div data-lang="zh"> <div class="student-name">陈强</div> <div class="student-role">硕士生 · 2025</div> </div> </a> </div> <div class="student-card"> <a class="student-card-link" href="https://cs.cqut.edu.cn/" target="_blank" rel="noopener"> <img src="/assets/img/7.jpg" alt="Xue Zhao" loading="lazy"> <div data-lang="en"> <div class="student-name">Xue Zhao</div> <div class="student-role">PhD Student · 2025</div> </div> <div data-lang="zh"> <div class="student-name">赵雪</div> <div class="student-role">博士生 · 2025</div> </div> </a> </div> </div> <div data-lang="en"><h2 class="people-section-title">Graduated Master Students</h2></div> <div data-lang="zh"><h2 class="people-section-title">已毕业硕士生</h2></div> <div class="students-grid"> <div class="student-card"> <a class="student-card-link" href="https://cs.cqut.edu.cn/" target="_blank" rel="noopener"> <img src="/assets/img/9.jpg" alt="Xiaoming Wang" loading="lazy"> <div data-lang="en"> <div class="student-name">Xiaoming Wang</div> <div class="student-role">Graduated MSc · 2024</div> </div> <div data-lang="zh"> <div class="student-name">王小明</div> <div class="student-role">已毕业硕士生 · 2024</div> </div> </a> </div> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 You R. Name. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. </div> </footer> <script>
   window.alFolio = {
