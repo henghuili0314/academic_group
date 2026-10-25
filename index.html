@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -35,12 +35,14 @@ IVC LAB
 
 <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light">
 
-<link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
+<link rel="shortcut icon" href="/assets/img/brand/ivc-lab-favicon.png?v=32bc30b6bfacb191f2ea786f923bc9ad">
+<link rel="apple-touch-icon" href="/assets/img/brand/ivc-lab-apple-touch.png?v=2681954f972e63b06fef4ebc35873ebe">
 <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1">
 
-<link rel="stylesheet" href="/assets/css/custom-nav.css?v=77375153769c6e2a1570b4870eff26e9">
+<link rel="stylesheet" href="/assets/css/custom-nav.css?v=c011ec0c47bba30ba88015aaeaad1754">
+<link rel="stylesheet" href="/assets/css/brand.css?v=2cbc4bfeb2a5f9cc7c14268dac978fa7">
 <link rel="canonical" href="https://ivclab-fx.github.io/">
-<script src="/assets/js/theme.js?v=c6415737f990e913d0359f8aafcd7bb2"></script>
+<script src="/assets/js/theme.js?v=faf93366aaa3d5843bca3402c3a92193"></script>
 <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark">
 <script>
     initTheme();
@@ -110,23 +112,19 @@ IVC LAB
 <div class="container mt-5" role="main">
 <div class="post">
 <header class="post-header">
-<h1 class="post-title">
-IVC LAB
+<h1 class="post-title ivc-home-brand">
+<svg class="ivc-brand-image ivc-brand-image--wordmark" viewbox="720 168 1390 435" width="1390" height="435" role="img" aria-label="IVC LAB" focusable="false">
+<image href="/assets/img/brand/ivc-lab-horizontal.png?v=ea7f0aa14f593b43dd78e09f912059ef" width="2172" height="724"></image>
+</svg>
 </h1>
-<p class="desc"></p>
+<p class="ivc-home-subtitle">
+<span data-lang="zh">冯欣老师课题组</span>
+<span data-lang="en">Xin Feng Research Group</span>
+</p>
 </header>
 <article>
-<div class="profile float-right">
-<figure>
-<picture>
-
-
-<img src="/assets/img/ivc_lab_logo.png?v=d589a9ea67ee4e535b92f7b0463c79ea" class="img-fluid z-depth-1
-rounded" width="100%" height="auto" alt="ivc_lab_logo.png" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });">
-</picture>
-</figure>
-</div>
-<div class="clearfix">
+<div class="ivc-home-intro">
+<div class="ivc-home-copy">
 <style>
 /* News section: scroll only when content overflows */
 .news {
@@ -192,6 +190,9 @@ rounded" width="100%" height="auto" alt="ivc_lab_logo.png" loading="eager" onerr
 .bio-i18n {
   display: grid;
 }
+.bio-i18n > [data-lang] > :last-child {
+  margin-bottom: 0;
+}
 .bio-i18n > [data-lang] {
   grid-area: 1 / 1;
 }
@@ -201,48 +202,6 @@ html[data-lang="zh"] .bio-i18n > [data-lang="en"] {
   visibility: hidden;
 }
 
-/* Desktop two-column grid: bio text col 1 (1fr), profile logo col 2 (fixed 320px) */
-@media (min-width: 768px) {
-  .post > article {
-    display: grid;
-    grid-template-columns: 1fr 320px;
-    gap: 0 2rem;
-  }
-  /* Bio container: col-1 */
-  .post > article > .bio-i18n {
-    grid-column: 1;
-    grid-row: 1;
-  }
-  /* Profile: col-2, override theme's .profile{width:30%}, vertically centered */
-  .post > article > .profile.float-right {
-    float: none;
-    width: 100% !important;
-    grid-column: 2;
-    grid-row: 1;
-    align-self: center;
-  }
-  /* All later sections span both columns */
-  .post > article > h2,
-  .post > article > .news,
-  .post > article > .publications,
-  .post > article > .social {
-    grid-column: 1 / -1;
-  }
-  /* Center the crop-marked figure + logo image inside the profile div */
-  .post > article > .profile.float-right > figure {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-  }
-  .post > article > .profile.float-right > figure img {
-    width: 100%;
-    height: auto;
-  }
-  .post > article > h2:first-of-type {
-    margin-top: 1rem;
-  }
-}
 </style>
 <div class="bio-i18n">
 <div data-lang="en">
@@ -253,6 +212,10 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 <div data-lang="zh">待写入
 </div>
 </div>
+</div>
+<figure class="ivc-home-symbol" aria-hidden="true">
+<img class="ivc-brand-image ivc-brand-image--symbol" src="/assets/img/brand/ivc-lab-icon.png?v=99552a8b7252cd87ded625fb5a6a8e72" width="1254" height="1254" alt="" decoding="async">
+</figure>
 </div>
 
 <h2>
